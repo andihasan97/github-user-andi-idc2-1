@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Github User AndiHasan</string>
+    <string name="githubUser">GITHUB USERS</string>
+    <string name="search">Search</string>
+    <string name="close">Close</string>
+    <string name="def_username">-</string>
+    <string name="profile">Profile</string>
+    <string name="repository">Repository</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="back">Back</string>
+    <string name="splash">Splash</string>
+    <string name="clear">Clear</string>
+    <string name="search_not_found">User Not Found</string>
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="litle_50">4dp</dimen>
+    <dimen name="litle_100">8dp</dimen>
+    
+    <dimen name="normal_100">16dp</dimen>
+    <dimen name="normal_150">24dp</dimen>
+    
+    <dimen name="big_250">80dp</dimen>
+    
+    <dimen name="img_user_profile_detail">128dp</dimen>
+    <dimen name="img_user_profile_big">84dp</dimen>
+    
+    <dimen name="sp5">24sp</dimen>
+    <dimen name="b16">16sp</dimen>
+    <dimen name="edt_search_h">48dp</dimen>
+    <dimen name="img_user_m">68dp</dimen>
+</resources>
