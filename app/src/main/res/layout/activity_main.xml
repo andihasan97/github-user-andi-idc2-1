@@ -4,19 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_swipe"
     style="@style/sizeAMatchP"
-    android:paddingStart="@dimen/normal_100"
-    android:paddingEnd="@dimen/normal_100"
     tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/sizeAMatchP"
+            android:paddingHorizontal="@dimen/normal_100">
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/sizeAWrapC"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/githubUser"
+                android:textColor="?attr/textUp"
+                android:textSize="@dimen/b16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_users"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:clipToPadding="false"
-        android:padding="@dimen/normal_100"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_title"
         tools:listitem="@layout/item_row_user" />
 </androidx.constraintlayout.widget.ConstraintLayout>

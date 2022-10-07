@@ -7,10 +7,10 @@
         <entry key="app/src/main/res/drawable/ic_close.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_user.xml" value="0.1785" />
-        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/item_row_user.xml" value="0.5015527950310559" />
+        <entry key="app/src/main/res/layout/item_row_user.xml" value="0.22" />
       </map>
     </option>
   </component>
