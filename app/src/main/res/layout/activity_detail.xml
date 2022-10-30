@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_detail"
+    style="@style/sizeAMatchP"
+    tools:context=".DetailActivity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/app_bar_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorMain"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        style="@style/sizeAMatchP"
+                        android:paddingHorizontal="@dimen/normal_100">
+
+                        <TextView
+                            android:id="@+id/tv_username"
+                            style="@style/sizeAWrapC"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/detail"
+                            android:textColor="?attr/textUp"
+                            android:textSize="@dimen/b16"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint1"
+                    style="@style/sizeParsialMatchP"
+                    android:layout_marginBottom="@dimen/normal_100"
+                    app:layout_constraintBottom_toTopOf="@id/constraint2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/dt_img_avatar_user"
+                        android:layout_width="@dimen/img_user_profile_detail"
+                        android:layout_height="@dimen/img_user_profile_detail"
+                        android:contentDescription="@string/profile"
+                        android:src="@drawable/ic_user"
+                        app:layout_constraintBottom_toTopOf="@id/dt_tv_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dt_tv_name"
+                        style="@style/sizeAWrapC"
+                        android:layout_marginTop="@dimen/normal_100"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="?attr/colorText"
+                        android:textSize="@dimen/b16"
+                        app:layout_constraintBottom_toTopOf="@id/dt_tv_u_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dt_img_avatar_user"
+                        tools:text="Andi Hasan Ashari" />
+
+                    <TextView
+                        android:id="@+id/dt_tv_u_name"
+                        style="@style/sizeAWrapC"
+                        android:layout_marginTop="@dimen/litle_100"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="@dimen/b16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dt_tv_name"
+                        app:layout_constraintBottom_toTopOf="@id/dt_tv_company"
+                        tools:text="username"/>
+
+                    <TextView
+                        android:id="@+id/dt_tv_company"
+                        style="@style/sizeAWrapC"
+                        android:layout_marginTop="@dimen/litle_100"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="@dimen/b16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dt_tv_u_name"
+                        app:layout_constraintBottom_toTopOf="@id/dt_tv_location"
+                        tools:text="Google" />
+
+                    <TextView
+                        android:id="@+id/dt_tv_location"
+                        style="@style/sizeAWrapC"
+                        android:layout_marginTop="@dimen/litle_100"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="@dimen/b16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dt_tv_company"
+                        tools:text="Indonesia" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint2"
+                    style="@style/sizeParsialMatchP"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constraint1">
+
+                    <TextView
+                        android:id="@+id/tv_repository"
+                        android:layout_width="@dimen/big_250"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/normal_150"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:textColor="?attr/colorText"
+                        android:textSize="@dimen/sp5"
+                        app:layout_constraintBottom_toTopOf="@id/text_view_repository"
+                        app:layout_constraintEnd_toStartOf="@id/tv_followers"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="10000" />
+
+                    <TextView
+                        android:id="@+id/text_view_repository"
+                        style="@style/sizeAWrapC"
+                        android:layout_marginTop="@dimen/litle_50"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/repository"
+                        android:textSize="@dimen/b16"
+                        app:layout_constraintEnd_toEndOf="@id/tv_repository"
+                        app:layout_constraintStart_toStartOf="@id/tv_repository"
+                        app:layout_constraintTop_toBottomOf="@id/tv_repository" />
+
+                    <TextView
+                        android:id="@+id/tv_followers"
+                        android:layout_width="@dimen/big_250"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/normal_100"
+                        android:layout_marginTop="@dimen/normal_150"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:textColor="?attr/colorText"
+                        android:textSize="@dimen/sp5"
+                        app:layout_constraintBottom_toTopOf="@id/text_view_repository"
+                        app:layout_constraintEnd_toStartOf="@id/tv_following"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintStart_toEndOf="@id/tv_repository"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="100" />
+
+                    <TextView
+                        android:id="@+id/text_view_followers"
+                        style="@style/sizeAWrapC"
+                        android:layout_marginTop="@dimen/litle_50"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/followers"
+                        android:textSize="@dimen/b16"
+                        app:layout_constraintEnd_toEndOf="@id/tv_followers"
+                        app:layout_constraintStart_toStartOf="@id/tv_followers"
+                        app:layout_constraintTop_toBottomOf="@id/tv_followers" />
+
+                    <TextView
+                        android:id="@+id/tv_following"
+                        android:layout_width="@dimen/big_250"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/normal_100"
+                        android:layout_marginTop="@dimen/normal_150"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:textColor="?attr/colorText"
+                        android:textSize="@dimen/sp5"
+                        app:layout_constraintBottom_toTopOf="@id/text_view_following"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintStart_toEndOf="@id/tv_followers"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="100" />
+
+                    <TextView
+                        android:id="@+id/text_view_following"
+                        style="@style/sizeAWrapC"
+                        android:layout_marginTop="@dimen/litle_50"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/following"
+                        android:textSize="@dimen/b16"
+                        app:layout_constraintEnd_toEndOf="@id/tv_following"
+                        app:layout_constraintStart_toStartOf="@id/tv_following"
+                        app:layout_constraintTop_toBottomOf="@id/tv_following" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
